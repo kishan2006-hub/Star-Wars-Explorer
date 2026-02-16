@@ -1,3 +1,3 @@
-# Star-Wars-Explorer
+# Star Wars Explorer
 
-# Live Domain Link:- star-wars-explorer-tau.vercel.app
+**Link:** [star-wars-explorer-tau.vercel.app](https://star-wars-explorer-tau.vercel.app/)
