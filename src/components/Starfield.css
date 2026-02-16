@@ -1,0 +1,80 @@
+.starfield-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background: radial-gradient(ellipse at bottom, #1B2735 0%, #090A0F 100%);
+    overflow: hidden;
+}
+
+.stars {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 1px;
+    height: 1px;
+    background: transparent;
+}
+
+.stars-small {
+    box-shadow: 1735px 7px #FFF, 1558px 1475px #FFF,
+        500px 200px #FFF, 1200px 800px #FFF, 300px 1500px #FFF, 1800px 400px #FFF,
+        100px 100px #FFF, 1600px 1200px #FFF, 800px 100px #FFF, 1400px 1600px #FFF,
+        200px 1800px #FFF, 900px 500px #FFF, 1500px 200px #FFF, 400px 1300px #FFF,
+        700px 1700px #FFF, 1300px 900px #FFF, 600px 300px #FFF, 1100px 1100px #FFF,
+        1900px 1900px #FFF, 100px 1900px #FFF, 1900px 100px #FFF, 1000px 1000px #FFF;
+    animation: animStar 150s linear infinite;
+}
+
+.stars-medium {
+    width: 2px;
+    height: 2px;
+    box-shadow: 154px 175px #FFF, 1200px 400px #FFF, 500px 1200px #FFF, 1800px 1500px #FFF,
+        300px 300px #FFF, 1600px 100px #FFF, 800px 1600px #FFF, 1400px 800px #FFF,
+        200px 900px #FFF, 900px 1300px #FFF, 1500px 500px #FFF, 400px 1700px #FFF,
+        700px 200px #FFF, 1300px 1500px #FFF, 600px 1100px #FFF, 1100px 300px #FFF;
+    animation: animStar 100s linear infinite;
+}
+
+.stars-large {
+    width: 3px;
+    height: 3px;
+    box-shadow: 124px 475px #FFF, 1000px 200px #FFF, 400px 1400px #FFF, 1600px 1600px #FFF,
+        200px 200px #FFF, 1400px 1400px #FFF, 600px 600px #FFF, 1800px 1800px #FFF;
+    animation: animStar 50s linear infinite;
+}
+
+.stars-small::after,
+.stars-medium::after,
+.stars-large::after {
+    content: " ";
+    position: absolute;
+    top: 2000px;
+    width: inherit;
+    height: inherit;
+    background: inherit;
+    box-shadow: inherit;
+}
+
+@keyframes animStar {
+    from {
+        transform: translateY(0px);
+    }
+
+    to {
+        transform: translateY(-2000px);
+    }
+}
+
+.nebula {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle at 50% 50%, rgba(255, 232, 31, 0.05) 0%, transparent 70%);
+    opacity: 0.5;
+    filter: blur(80px);
+}
